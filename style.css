@@ -206,19 +206,14 @@ button{
 .services {
     width: 90%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
+   
 }
 
 .web {
-    width: calc(33.33% - 30px);
     min-height: 260px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.12);
     border-radius: 15px;
-    margin: 15px;
     padding: 25px 20px;
     transition: 0.4s;
     background-color: white;
