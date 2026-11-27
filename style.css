@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+.logo i {
+    color: #e65f78;
+    font-size: 23px;
+    margin-right: 8px;
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.nav-link {
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #e65f78;
+}
+
+.social a {
+    color: #333;
+    font-size: 14px;
+    padding: 8px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #e65f78;
+}
+.nav-link.active{
+    color: #e65f78;
+}
+.header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(images/t.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header-content {
+  font-size: 28px;
+  line-height: 1.5;
+}
+.header-content h1 {
+  color: white;
+}
+.about {
+    padding: 70px 0;
+}
+
+.about-title h2 {
+    font-size: 40px;
+    color: #333;
+}
+
+.line {
+    width: 40px;
+    height: 2px;
+    background-color: #333;
+    margin: 15px auto 25px;
+    transition: 0.3s;
+}
+
+.about-title:hover .line {
+    width: 60px;
+}
+
+.about-title p {
+    width: 60%;
+    margin: auto;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.about .row {
+    margin-top: 80px;
+}
+
+.about .row p {
+    color: #666;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.skill span {
+    color: #333;
+    font-weight: 500;
+}
+
+.progress {
+    height: 5px;
+    background-color: #eee;
+    border-radius: 0;
+    margin-top: 8px;
+}
+
+.progress-bar {
+    background-color: #e65f78;
+}
+.team-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.team-img img {
+    transition: transform 0.5s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 36, 36, 0.7);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.team-img:hover .overlay {
+    opacity: 1;
+}
+
+.team-img:hover img {
+    transform: scale(1.1);
+}
+
+.social-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-size: 22px;
+}
+
+.social-icons i {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: black;
+}
+button{
+    padding: 15px;
+    background-color: tomato;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid rgb(148, 148, 250);
+}
+.s-header {
+    text-align: center;
+    margin: 50px 0 30px;
+}
+
+.s-header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.s-header p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.s-header span {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #3498db;
+    margin: auto;
+}
+
+
+
+.services {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.web {
+    width: calc(33.33% - 30px);
+    min-height: 260px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+    border-radius: 15px;
+    margin: 15px;
+    padding: 25px 20px;
+    transition: 0.4s;
+    background-color: white;
+}
+
+
+.web i {
+    width: 70px;
+    height: 70px;
+    border: 4px solid #3498db;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #333;
+    background-color: white;
+    transition: 0.4s;
+}
+
+.web h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 0 10px;
+}
+
+.web p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+.web:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.web:hover i {
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 0 0 7px #dceeff;
+}
+.review-avatars button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.review-avatars img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0.4;
+    transition: 0.4s;
+}
+
+.review-avatars button.active img,
+.review-avatars button:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
